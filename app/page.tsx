@@ -136,6 +136,28 @@ export default function Home() {
         </section>
 
         <section className="mb-16">
+          <h2 className="mb-6 text-2xl font-semibold">Experience</h2>
+          <div className="space-y-6">
+            {experience.map((e) => (
+              <article key={e.role} className="rounded-2xl border border-zinc-800 bg-zinc-900 p-6">
+                <h3 className="text-lg font-semibold">{e.role}</h3>
+                <p className="text-sm text-emerald-400">{e.org} · {e.time}</p>
+                <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-zinc-400">
+                  {e.points.map((p) => (
+                    <li key={p}>{p}</li>
+                  ))}
+                </ul>
+                {e.link && (
+                  <a href={e.link} target="_blank" rel="noreferrer" className="mt-3 inline-block text-sm text-zinc-300 hover:underline">
+                    View merged PR
+                  </a>
+                )}
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-16">
           <h2 className="mb-6 text-2xl font-semibold">Skills</h2>
           <div className="flex flex-wrap gap-2">
             {skills.map((s) => (
