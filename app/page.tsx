@@ -43,6 +43,29 @@ const skills = [
   "Git", "GitHub Actions", "Render", "Vercel",
 ];
 
+const experience = [
+  {
+    role: "Remote AI Product Engineering Intern · Finalist",
+    org: "HNG Internship 15 · Team Vulcan",
+    time: "Sept 2026 to Nov 2026",
+    points: [
+      "Passed the HNG 15 finalist grading.",
+      "Merged a frontend contribution to the Zedu team project (zedu-hng/zedu-fe PR #177).",
+      "Proposed the 'Mark as answered' thread feature, which the team adopted as its feature.",
+    ],
+    link: "https://github.com/zedu-hng/zedu-fe/pull/177",
+  },
+  {
+    role: "Class / Course Representative",
+    org: "Federal University of Technology, Ikot Abasi",
+    time: "2024 to present",
+    points: [
+      "Represent a class of about 80 Software Engineering students.",
+      "Coordinated a 20-student team on the Hostel Allocation and Bed Space Management System.",
+    ],
+  },
+];
+
 const links = [
   { label: "Email", href: "mailto:mickyhill4070@gmail.com" },
   { label: "GitHub", href: "https://github.com/Mickyhill" },
